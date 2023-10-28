@@ -1,0 +1,19 @@
+@import url("../css/main.css");
+
+p,
+h3 {
+  padding: 0;
+  margin: 0;
+}
+
+.orders_content {
+  margin-top: 60px;
+  padding: 20px 80px;
+}
+
+.btn-back-to-home {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  width: max-content;
+}

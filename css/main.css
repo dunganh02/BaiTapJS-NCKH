@@ -1,0 +1,138 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h3,
+p {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: sans-serif;
+  font-size: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+.app {
+}
+
+/* Header */
+.app_header {
+  justify-content: space-between;
+  height: 60px;
+  box-shadow: 0 5px 10px 2px rgba(0, 0, 0, 0.2);
+  display: flex;
+  /* font-size: 26px; */
+  padding: 0 150px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  background-color: #fff;
+}
+
+.app_header-logo {
+  display: flex;
+  align-items: center;
+}
+
+.app_header-logo .app_logo {
+  display: block;
+  height: 50%;
+  width: auto;
+  margin-right: 8px;
+}
+
+.app_.app_header-name-brand {
+}
+
+.app_header-navbar {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.navbar-item {
+  padding: 4px;
+}
+
+.btn-cart {
+  position: relative;
+}
+
+.header_logo-cart {
+  height: 20px;
+}
+
+.active {
+  border-bottom: 3px solid orangered;
+}
+
+.quantity_cart {
+  position: absolute;
+  top: 1px;
+  right: -6px;
+  width: 18px;
+  height: 18px;
+  background-color: red;
+  border-radius: 50%;
+  font-size: 10px;
+  color: #fff;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.quantity_cart-numberm {
+  font-size: 10px;
+  line-height: 18px;
+  transform: translateY(1px);
+}
+.quantity_bill-number {
+  color: red;
+  font-size: 15px;
+}
+.app_header-mobile-nav {
+  display: none;
+}
+
+@media screen and (min-width: 800px) and (max-width: 1058px) {
+  .app_header {
+    padding: 0 100px;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 799px) {
+  .app_header {
+    padding: 0 30px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .app_header {
+    display: none;
+  }
+  .app_header-mobile-nav {
+    display: block;
+    height: 60px;
+    box-shadow: 0 5px 10px 2px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    background-color: #fff;
+  }
+  .offcanvas.offcanvas-end {
+    width: 80% !important;
+  }
+}

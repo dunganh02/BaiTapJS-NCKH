@@ -1,0 +1,127 @@
+@import url("../main.css");
+
+p,
+h3 {
+  padding: 0;
+  margin: 0;
+}
+
+.cart_content {
+  padding: 20px 80px;
+  margin-top: 60px;
+}
+.cart_content-table-cart {
+}
+
+.cart_content-image-product {
+  /* height: 80px; */
+  width: 100px;
+}
+
+.cart_content-infors-product {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-left: 20px;
+}
+
+.cart_content-quantity-product {
+  font-size: 14px;
+}
+
+.col-subtotal,
+.col-total,
+.col-quantity {
+  display: flex;
+  align-items: center;
+  height: 100% !important;
+  width: 100%;
+}
+.col-subtotal,
+.col-total {
+  justify-content: center;
+}
+
+.col-btn-clear-cart {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+  cursor: pointer;
+  color: red;
+}
+
+.col-quantity {
+  justify-content: space-between;
+}
+.col-quantity button {
+  background-color: transparent;
+  padding: 10px;
+}
+
+.content_cart-total {
+  width: fit-content;
+  margin-right: 0px;
+  margin-left: auto;
+  margin-top: 50px;
+  margin-bottom: 40px;
+}
+.content_cart-btn {
+  display: flex;
+  justify-content: space-between;
+}
+.btn-back-to-home {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.form_customer-wrap {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form_customer-container {
+  width: 700px;
+  background-color: #fff;
+  border-radius: 6px;
+  font-size: 18px;
+}
+
+.title-form-customer {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #ccc;
+  /* align-items: center; */
+}
+
+.title-form-customer .icon-close-form-customer {
+  font-size: 26px;
+  cursor: pointer;
+}
+
+.form-customer {
+  padding: 20px;
+}
+
+.btns-form-customer {
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px;
+  border-top: 1px solid #ccc;
+  gap: 10px;
+}
+.btn-cancel-customer-form {
+}
+.btn-submit-customer-form {
+}
